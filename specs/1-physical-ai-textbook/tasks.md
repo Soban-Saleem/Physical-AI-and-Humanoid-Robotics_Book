@@ -155,15 +155,15 @@
 
 ### Phase 13: Polish and Cross-Cutting Concerns
 
-- [ ] T111 Implement accessibility features throughout textbook
-- [ ] T112 Optimize performance for resource-intensive simulations
-- [ ] T113 Create search functionality for textbook content
-- [ ] T114 Implement progress tracking for students
-- [ ] T115 Create navigation improvements and user experience enhancements
-- [ ] T116 Finalize content for Flesch-Kincaid grade level requirements
-- [ ] T117 Verify all technical claims against authoritative sources
-- [ ] T118 Conduct final quality assurance review
-- [ ] T119 Deploy final textbook to GitHub Pages
+- [x] T111 Implement accessibility features throughout textbook
+- [x] T112 Optimize performance for resource-intensive simulations
+- [x] T113 Create search functionality for textbook content
+- [x] T114 Implement progress tracking for students
+- [x] T115 Create navigation improvements and user experience enhancements
+- [x] T116 Finalize content for Flesch-Kincaid grade level requirements
+- [x] T117 Verify all technical claims against authoritative sources
+- [x] T118 Conduct final quality assurance review
+- [x] T119 Deploy final textbook to GitHub Pages
 
 ## Dependencies
 
