@@ -1,0 +1,8 @@
+{
+  "label": "Module 2: The Digital Twin (Gazebo & Unity)",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Explore simulation environments that serve as digital twins for physical robots, focusing on Gazebo and Unity integration."
+  }
+}
