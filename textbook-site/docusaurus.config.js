@@ -11,15 +11,15 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://panaversity.github.io',
+  url: 'https://soban-saleem.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/HACKATHON-Book/',
+  baseUrl: '/Physical-AI-and-Humanoid-Robotics_Book/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'panaversity', // Usually your GitHub org/user name.
-  projectName: 'HACKATHON-Book', // Usually your repo name.
+  organizationName: 'Soban-Saleem', // Usually your GitHub org/user name.
+  projectName: 'Physical-AI-and-Humanoid-Robotics_Book', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -42,7 +42,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/panaversity/HACKATHON-Book/tree/main/textbook-site/',
+            'https://github.com/Soban-Saleem/Physical-AI-and-Humanoid-Robotics_Book/tree/master/textbook-site/',
         },
         blog: false, // Disable blog for textbook
         theme: {
@@ -72,7 +72,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'}, // Remove if blog disabled
           {
-            href: 'https://github.com/panaversity/HACKATHON-Book',
+            href: 'https://github.com/Soban-Saleem/Physical-AI-and-Humanoid-Robotics_Book',
             label: 'GitHub',
             position: 'right',
           },
@@ -124,16 +124,16 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/panaversity/HACKATHON-Book',
+                href: 'https://github.com/Soban-Saleem/Physical-AI-and-Humanoid-Robotics_Book',
               },
               {
-                label: 'Panaversity',
-                href: 'https://panaversity.org',
+                label: 'Project Repository',
+                href: 'https://github.com/Soban-Saleem/Physical-AI-and-Humanoid-Robotics_Book',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Panaversity. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Textbook. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
