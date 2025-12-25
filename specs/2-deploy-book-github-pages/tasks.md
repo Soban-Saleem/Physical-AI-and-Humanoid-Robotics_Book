@@ -6,125 +6,97 @@
 
 ## Task List
 
-### Phase 1: Repository and Environment Setup
+### Phase 1: Pre-deployment Setup
 
-- [x] T001 Set up GitHub repository for textbook deployment
-- [x] T002 Configure GitHub Pages settings in repository
-- [x] T003 Install and configure Node.js and npm environment
-- [x] T004 Install Docusaurus dependencies and verify setup
-- [x] T005 Verify all textbook content is properly formatted for Docusaurus
-- [x] T006 Create and configure environment variables for backend services
-- [ ] T007 Test local build process with `npm run build`
-- [ ] T008 Verify local serving with `npm run serve`
-- [x] T009 Set up proper Git configuration for deployment
+- [ ] T001 Create GitHub repository for the textbook if not already created
+- [ ] T002 Verify repository has proper GitHub Pages settings configured
+- [ ] T003 Set up GitHub Actions permissions for deployment
+- [ ] T004 Create and configure environment variables for backend services
+- [ ] T005 Verify Docusaurus configuration matches GitHub Pages requirements
+- [ ] T006 Test local build process with `npm run build`
+- [ ] T007 Verify all content renders correctly in built version
+- [ ] T008 Check for broken links with `npm run serve` and browser navigation
+- [ ] T009 Prepare repository for deployment with proper .gitignore
 
-### Phase 2: Docusaurus Configuration and Optimization
+### Phase 2: Backend Service Preparation
 
-- [x] T010 Update docusaurus.config.js with deployment settings
-- [x] T011 Configure site metadata (title, description, favicon)
-- [x] T012 Set up proper URL and base path for GitHub Pages
-- [x] T013 Optimize site for performance and accessibility
-- [x] T014 Implement responsive design for mobile compatibility
-- [x] T015 Configure search functionality for textbook content
-- [x] T016 Set up proper navigation and sidebar structure
-- [x] T017 Add custom styling for robotics textbook aesthetics
-- [x] T018 Verify all modules and content sections are properly linked
+- [ ] T010 Deploy backend services (API, database, vector storage) to cloud infrastructure
+- [ ] T011 Configure API endpoints for RAG chatbot integration
+- [ ] T012 Set up authentication service with background collection
+- [ ] T013 Implement personalization service for content adaptation
+- [ ] T014 Configure translation service for Urdu capability
+- [ ] T015 Test backend services connectivity and functionality
+- [ ] T016 Document API endpoints and authentication requirements
+- [ ] T017 Secure backend services with appropriate authentication and rate limiting
 
-### Phase 3: Backend Service Integration
+### Phase 3: Static Site Optimization
 
-- [ ] T019 Configure API endpoints for RAG chatbot integration
-- [ ] T020 Set up authentication service connections
-- [ ] T021 Implement personalization feature API connections
-- [ ] T022 Configure translation service API connections
-- [ ] T023 Test frontend-backend communication locally
-- [ ] T024 Implement error handling for backend service failures
-- [ ] T025 Configure CORS settings for GitHub Pages domain
-- [ ] T026 Validate security of API connections
-- [ ] T027 Implement fallback mechanisms for service outages
+- [ ] T018 Optimize images and assets for web deployment
+- [ ] T019 Implement proper SEO meta tags and descriptions
+- [ ] T020 Configure sitemap generation for search engine indexing
+- [ ] T021 Set up proper redirects and error pages
+- [ ] T022 Optimize JavaScript bundles for faster loading
+- [ ] T023 Implement lazy loading for non-critical content
+- [ ] T024 Verify accessibility compliance (WCAG 2.1 AA)
+- [ ] T025 Test responsive design on multiple device sizes
 
-### Phase 4: GitHub Actions Workflow Setup
+### Phase 4: Deployment Pipeline Execution
 
-- [x] T028 Create GitHub Actions workflow file for deployment
-- [x] T029 Configure workflow triggers for automatic deployment
-- [x] T030 Set up proper Node.js environment in workflow
-- [x] T031 Implement build process in workflow
-- [x] T032 Configure deployment to GitHub Pages
-- [x] T033 Add workflow permissions and security settings
-- [x] T034 Test workflow with manual trigger
-- [x] T035 Verify deployment logs and status reporting
-- [x] T036 Optimize workflow for faster builds
+- [ ] T026 Commit and push workflow file to trigger GitHub Actions
+- [ ] T027 Monitor GitHub Actions build process for errors
+- [ ] T028 Verify successful deployment to gh-pages branch
+- [ ] T029 Test deployed site functionality and navigation
+- [ ] T030 Validate all modules and content sections are accessible
+- [ ] T031 Test RAG chatbot integration with deployed backend
+- [ ] T032 Verify authentication and personalization features work
+- [ ] T033 Test Urdu translation functionality per chapter
+- [ ] T034 Document deployment process and troubleshooting steps
 
-### Phase 5: Content Validation and Optimization
+### Phase 5: Post-Deployment Validation
 
-- [ ] T037 Validate all textbook content renders correctly
-- [ ] T038 Optimize images and media assets for web deployment
-- [ ] T039 Implement lazy loading for large assets
-- [ ] T040 Verify all links and cross-references work correctly
-- [ ] T041 Test all interactive elements and features
-- [ ] T042 Validate accessibility compliance (WCAG 2.1 AA)
-- [ ] T043 Check all modules for proper functionality
-- [ ] T044 Verify Urdu translation functionality works
-- [ ] T45 Validate personalization features per chapter
+- [ ] T035 Run automated accessibility tests on deployed site
+- [ ] T036 Perform Lighthouse performance audit
+- [ ] T037 Test all features across different browsers (Chrome, Firefox, Safari)
+- [ ] T038 Validate mobile responsiveness with Google Mobile-Friendly Test
+- [ ] T039 Verify all links and navigation work correctly
+- [ ] T040 Test security headers and HTTPS configuration
+- [ ] T041 Document site performance metrics
+- [ ] T042 Create monitoring setup for deployed site
+- [ ] T043 Prepare for user acceptance testing with beta users
 
-### Phase 6: Feature Integration Testing
+## Dependencies
 
-- [ ] T046 Test RAG chatbot functionality in deployed environment
-- [ ] T047 Verify user authentication system works properly
-- [ ] T048 Test personalization features with different user profiles
-- [ ] T049 Validate Urdu translation per chapter functionality
-- [ ] T050 Test navigation and search across all modules
-- [ ] T051 Verify all code examples and exercises work
-- [ ] T052 Test mobile responsiveness of all features
-- [ ] T053 Validate performance metrics (load times, etc.)
-- [ ] T054 Test offline capabilities and service workers
+- Phase 1 (T001-T009) must be completed before Phase 2 (T010-T017)
+- Phase 2 (T010-T017) must be completed before Phase 4 (T026-T034)
+- All backend services (Phase 2) must be operational before full feature validation (Phase 5)
 
-### Phase 7: Deployment and Validation
+## Parallel Execution Examples
 
-- [x] T055 Execute initial deployment to GitHub Pages
-- [x] T056 Verify site accessibility at GitHub Pages URL
-- [x] T057 Test all features in deployed environment
-- [x] T058 Validate site performance with Lighthouse
-- [x] T059 Check mobile-friendliness with Google tool
-- [x] T060 Verify all textbook modules are accessible
-- [x] T061 Test user registration and background collection
-- [x] T062 Validate RAG system responses to textbook content
-- [x] T063 Document deployment process and troubleshooting
+Per Phase:
+- [Phase 2] Tasks T011-T014 can run in parallel as they set up different backend services
+- [Phase 3] Tasks T018-T020 can run in parallel as they optimize different aspects of the site
+- [Phase 5] Tasks T035-T037 can run in parallel as they perform different validation tests
 
-### Phase 8: Monitoring and Maintenance Setup
+## Implementation Strategy
 
-- [ ] T064 Set up basic monitoring for site uptime
-- [ ] T065 Create documentation for content updates
-- [ ] T066 Establish process for regular content updates
-- [ ] T067 Implement feedback mechanism for users
-- [ ] T068 Set up automated testing for future changes
-- [ ] T069 Create maintenance runbooks for common issues
-- [ ] T070 Document rollback procedures if needed
-- [ ] T071 Configure analytics for user engagement tracking
-- [ ] T072 Plan for future feature additions and scaling
+1. **MVP Deployment**: Deploy basic textbook content first to verify GitHub Pages setup
+2. **Feature Integration**: Add RAG chatbot, authentication, and personalization features
+3. **Complete Deployment**: Add translation features and finalize all capabilities
+4. **Validation**: Thoroughly test all features in deployed environment
 
 ## Acceptance Criteria
 
 ### For Phase 1 (T001-T009)
 - [ ] GitHub repository properly configured for Pages deployment
 - [ ] Local build process completes without errors
-- [ ] All dependencies installed and verified
+- [ ] All content renders correctly in built version
 
-### For Phase 2 (T010-T018)
-- [ ] Docusaurus site properly configured for GitHub Pages
-- [ ] All content renders correctly with proper styling
-- [ ] Navigation and search function properly
+### For Phase 2 (T010-T017)
+- [ ] All backend services deployed and accessible
+- [ ] API endpoints properly configured and secured
+- [ ] Authentication system collects background information during signup
 
-### For Phase 3 (T019-T027)
-- [ ] All backend services properly connected
-- [ ] API communication works from GitHub Pages domain
-- [ ] Security measures implemented for API connections
-
-### For Phase 4 (T028-T036)
-- [ ] GitHub Actions workflow properly configured
-- [ ] Automatic deployment triggered by main branch changes
-- [ ] Workflow completes successfully with proper logging
-
-### For Phase 7 (T055-T063)
+### For Phase 4 (T026-T034)
 - [ ] Complete textbook deployed to GitHub Pages
 - [ ] All modules and features accessible and functional
 - [ ] RAG chatbot answers questions based only on textbook content
@@ -132,32 +104,9 @@
 - [ ] Personalization features work per chapter
 - [ ] Urdu translation available per chapter
 
-## Dependencies
-
-- Phase 1 must be completed before Phase 2 (T001-T009 → T010-T018)
-- Phase 2 must be completed before Phase 4 (T010-T018 → T028-T036)
-- Phase 3 must be completed before Phase 6 (T019-T027 → T046-T054)
-- All previous phases must be completed before deployment (T055-T063)
-
-## Parallel Execution Examples
-
-Per Phase:
-- [Phase 2] Tasks T011-T013 can run in parallel as they configure different aspects of Docusaurus
-- [Phase 3] Tasks T019-T022 can run in parallel as they connect different backend services
-- [Phase 6] Tasks T046-T050 can run in parallel as they test different features
-
-## Implementation Strategy
-
-1. **MVP Scope**: Complete Phases 1-4 for basic deployment functionality
-2. **Feature Integration**: Add backend services and features (Phases 5-6)
-3. **Validation**: Thoroughly test all functionality (Phase 7)
-4. **Operations**: Set up monitoring and maintenance (Phase 8)
-
-## Success Metrics
-
-- Textbook successfully deployed to GitHub Pages with all content accessible
-- RAG chatbot responds to queries with content from textbook only
-- User authentication system collects background information during signup
-- Personalization features adapt content per chapter based on user background
-- Urdu translation available per chapter with technical accuracy preserved
-- Site meets performance and accessibility standards
+### For Phase 5 (T035-T043)
+- [ ] Site passes accessibility tests with 95%+ score
+- [ ] Lighthouse performance scores >90% in all categories
+- [ ] Mobile-friendly test passes with 100% score
+- [ ] All features work across different browsers
+- [ ] Security configuration validated

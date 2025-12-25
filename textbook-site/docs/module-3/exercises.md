@@ -15,20 +15,20 @@ Create a photorealistic simulation environment in Isaac Sim with appropriate lig
 - Validate the environment using Isaac Sim's validation tools
 
 ### Steps to Complete
-1. Create a new USD stage in Isaac Sim
-2. Design a room layout with walls, floor, and ceiling
-3. Add furniture and objects (tables, chairs, boxes, etc.)
-4. Configure materials with realistic properties
-5. Set up lighting to simulate different conditions
-6. Add a humanoid robot model to the scene
-7. Test physics interactions between the robot and environment
+- Create a new USD stage in Isaac Sim
+- Design a room layout with walls, floor, and ceiling
+- Add furniture and objects (tables, chairs, boxes, etc.)
+- Configure materials with realistic properties
+- Set up lighting to simulate different conditions
+- Add a humanoid robot model to the scene
+- Test physics interactions between the robot and environment
 
 ### Solution Approach
-1. Use Isaac Sim's primitive shapes to build the environment
-2. Apply physically-based materials (OmniPBR) with appropriate properties
-3. Configure dome light and additional light sources
-4. Set up collision properties for all objects
-5. Test with a simple humanoid model like ATRIAS or similar
+- Use Isaac Sim's primitive shapes to build the environment
+- Apply physically-based materials (OmniPBR) with appropriate properties
+- Configure dome light and additional light sources
+- Set up collision properties for all objects
+- Test with a simple humanoid model like ATRIAS or similar
 
 ### Expected Output
 A complete simulation environment that appears photorealistic and behaves physically accurately, with a humanoid robot that can interact with objects in the scene.
@@ -46,19 +46,19 @@ Create a synthetic data generation pipeline that produces labeled training data 
 - Validate the quality of generated data
 
 ### Steps to Complete
-1. Create a scene with objects that need to be detected
-2. Implement domain randomization for materials, lighting, and positions
-3. Set up multiple sensors (RGB, depth, segmentation)
-4. Create a data collection loop that captures and saves data
-5. Implement validation checks for data quality
-6. Generate a dataset of at least 1000 samples
+- Create a scene with objects that need to be detected
+- Implement domain randomization for materials, lighting, and positions
+- Set up multiple sensors (RGB, depth, segmentation)
+- Create a data collection loop that captures and saves data
+- Implement validation checks for data quality
+- Generate a dataset of at least 1000 samples
 
 ### Solution Approach
-1. Use Isaac Sim's synthetic data generation capabilities
-2. Implement a randomization script that varies scene parameters
-3. Capture synchronized RGB, depth, and segmentation data
-4. Store data with appropriate annotations
-5. Validate that synthetic data has similar statistical properties to real data
+- Use Isaac Sim's synthetic data generation capabilities
+- Implement a randomization script that varies scene parameters
+- Capture synchronized RGB, depth, and segmentation data
+- Store data with appropriate annotations
+- Validate that synthetic data has similar statistical properties to real data
 
 ### Example Code Structure:
 ```python
@@ -125,19 +125,19 @@ Create a perception pipeline using Isaac ROS packages that processes sensor data
 - Validate the accuracy of the perception system
 
 ### Steps to Complete
-1. Create a robot model with a camera sensor
-2. Set up Isaac ROS DNN inference pipeline
-3. Configure object detection model (YOLO, etc.)
-4. Connect perception output to navigation system
-5. Test the complete pipeline in simulation
-6. Validate detection accuracy against ground truth
+- Create a robot model with a camera sensor
+- Set up Isaac ROS DNN inference pipeline
+- Configure object detection model (YOLO, etc.)
+- Connect perception output to navigation system
+- Test the complete pipeline in simulation
+- Validate detection accuracy against ground truth
 
 ### Solution Approach
-1. Use Isaac ROS Image Pipeline for camera data acquisition
-2. Implement DNN inference using Isaac ROS packages
-3. Connect perception output to ROS 2 topics
-4. Validate results against ground truth from simulation
-5. Optimize for real-time performance
+- Use Isaac ROS Image Pipeline for camera data acquisition
+- Implement DNN inference using Isaac ROS packages
+- Connect perception output to ROS 2 topics
+- Validate results against ground truth from simulation
+- Optimize for real-time performance
 
 ### Expected Output
 A functioning perception pipeline that detects objects in the simulated environment and publishes the results to ROS 2 topics, with validated accuracy metrics.
@@ -155,18 +155,18 @@ Configure and test the Nav2 path planning system specifically for humanoid robot
 - Validate path stability and safety for bipedal locomotion
 
 ### Steps to Complete
-1. Configure Nav2 parameters for humanoid robot dimensions
-2. Set up global and local costmaps with appropriate resolution
-3. Implement footstep planning integration if needed
-4. Test navigation in different environments (cluttered, open, narrow passages)
-5. Validate that planned paths are suitable for bipedal locomotion
-6. Implement recovery behaviors for humanoid-specific scenarios
+- Configure Nav2 parameters for humanoid robot dimensions
+- Set up global and local costmaps with appropriate resolution
+- Implement footstep planning integration if needed
+- Test navigation in different environments (cluttered, open, narrow passages)
+- Validate that planned paths are suitable for bipedal locomotion
+- Implement recovery behaviors for humanoid-specific scenarios
 
 ### Solution Approach
-1. Modify the Nav2 configuration files for humanoid robot properties
-2. Use appropriate planners that consider bipedal dynamics
-3. Test navigation with various obstacles and environments
-4. Validate paths for stability and safety in simulation
+- Modify the Nav2 configuration files for humanoid robot properties
+- Use appropriate planners that consider bipedal dynamics
+- Test navigation with various obstacles and environments
+- Validate paths for stability and safety in simulation
 
 ### Expected Output
 A Nav2 system configured and validated for humanoid robot navigation that can plan safe, stable paths for bipedal locomotion.
@@ -184,18 +184,18 @@ Combine the perception and navigation systems into a complete autonomous behavio
 - Test the integrated system in complex scenarios
 
 ### Steps to Complete
-1. Connect perception output to navigation goals
-2. Implement dynamic obstacle avoidance
-3. Create behavior trees that coordinate perception and navigation
-4. Test in scenarios with both static and dynamic elements
-5. Validate the integrated system performance
-6. Optimize the pipeline for real-time operation
+- Connect perception output to navigation goals
+- Implement dynamic obstacle avoidance
+- Create behavior trees that coordinate perception and navigation
+- Test in scenarios with both static and dynamic elements
+- Validate the integrated system performance
+- Optimize the pipeline for real-time operation
 
 ### Solution Approach
-1. Use ROS 2 topics to connect perception and navigation nodes
-2. Implement feedback loops between systems
-3. Use Nav2's behavior tree framework for coordination
-4. Test with increasingly complex scenarios
+- Use ROS 2 topics to connect perception and navigation nodes
+- Implement feedback loops between systems
+- Use Nav2's behavior tree framework for coordination
+- Test with increasingly complex scenarios
 
 ### Expected Output
 A complete system that uses perception to detect objects and navigate to them, while avoiding obstacles detected in real-time.
@@ -213,38 +213,38 @@ Optimize the complete perception-navigation pipeline for performance and accurac
 - Document performance improvements
 
 ### Steps to Complete
-1. Profile current system performance
-2. Identify bottlenecks in perception and navigation
-3. Optimize GPU utilization for perception tasks
-4. Optimize Nav2 parameters for better performance
-5. Implement efficient data structures and algorithms
-6. Validate that optimizations don't degrade accuracy
-7. Document performance improvements
+- Profile current system performance
+- Identify bottlenecks in perception and navigation
+- Optimize GPU utilization for perception tasks
+- Optimize Nav2 parameters for better performance
+- Implement efficient data structures and algorithms
+- Validate that optimizations don't degrade accuracy
+- Document performance improvements
 
 ### Solution Approach
-1. Use profiling tools to identify bottlenecks
-2. Optimize Isaac ROS pipeline parameters
-3. Adjust Nav2 costmap resolution and update rates
-4. Implement efficient data processing techniques
-5. Validate performance improvements
+- Use profiling tools to identify bottlenecks
+- Optimize Isaac ROS pipeline parameters
+- Adjust Nav2 costmap resolution and update rates
+- Implement efficient data processing techniques
+- Validate performance improvements
 
 ### Expected Output
 A significantly optimized perception-navigation pipeline with documented performance improvements while maintaining or improving accuracy.
 
 ## Self-Assessment Questions
 
-1. How does domain randomization improve the transfer of AI models from simulation to reality?
-2. What are the key differences between perception for wheeled robots versus humanoid robots?
-3. How can you validate that synthetic data is suitable for training real-world models?
-4. What considerations are important when configuring Nav2 for bipedal robots?
-5. How would you implement a feedback loop between perception and navigation systems?
+- How does domain randomization improve the transfer of AI models from simulation to reality?
+- What are the key differences between perception for wheeled robots versus humanoid robots?
+- How can you validate that synthetic data is suitable for training real-world models?
+- What considerations are important when configuring Nav2 for bipedal robots?
+- How would you implement a feedback loop between perception and navigation systems?
 
 ## Advanced Challenges (Optional)
 
-1. **Multi-Robot Perception**: Extend the perception system to handle multiple robots in the same environment
-2. **Semantic Navigation**: Implement navigation to objects based on semantic categories rather than specific locations
-3. **Active Perception**: Implement perception strategies where the robot actively moves sensors to gather more information
-4. **Uncertainty Quantification**: Add uncertainty estimation to perception outputs and use it in navigation decisions
+- **Multi-Robot Perception**: Extend the perception system to handle multiple robots in the same environment
+- **Semantic Navigation**: Implement navigation to objects based on semantic categories rather than specific locations
+- **Active Perception**: Implement perception strategies where the robot actively moves sensors to gather more information
+- **Uncertainty Quantification**: Add uncertainty estimation to perception outputs and use it in navigation decisions
 
 ## Summary
 

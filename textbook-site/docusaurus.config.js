@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('@docusaurus/theme-prism-react-renderer').themes.github;
-const darkCodeTheme = require('@docusaurus/theme-prism-react-renderer').themes.dracula;
+const lightCodeTheme = require('prism-react-renderer').themes.github;
+const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -65,12 +65,17 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'doc',
+            docId: 'intro',
             position: 'left',
             label: 'Textbook',
           },
-          {to: '/blog', label: 'Blog', position: 'left'}, // Remove if blog disabled
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Modules',
+          },
           {
             href: 'https://github.com/Soban-Saleem/Physical-AI-and-Humanoid-Robotics_Book',
             label: 'GitHub',
@@ -86,19 +91,19 @@ const config = {
             items: [
               {
                 label: 'Module 1: The Robotic Nervous System',
-                to: '/docs/module-1/intro',
+                to: '/docs/module-1/',
               },
               {
                 label: 'Module 2: The Digital Twin',
-                to: '/docs/module-2/intro',
+                to: '/docs/module-2/',
               },
               {
                 label: 'Module 3: The AI-Robot Brain',
-                to: '/docs/module-3/intro',
+                to: '/docs/module-3/',
               },
               {
                 label: 'Module 4: Vision-Language-Action',
-                to: '/docs/module-4/intro',
+                to: '/docs/module-4/',
               },
             ],
           },

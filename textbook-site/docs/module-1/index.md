@@ -40,13 +40,13 @@ For this module, you'll need:
 
 This module is divided into several sections:
 
-1. [ROS 2 Introduction](./module-1/ros2-introduction.md) - Overview of ROS 2 and its architecture
-2. [ROS 2 Nodes, Topics, and Services](./module-1/ros2-nodes-topics-services.md) - Core communication patterns
-3. [Python Integration with rclpy](./module-1/rclpy-python-integration.md) - Connecting Python to ROS 2
-4. [URDF Robot Description](./module-1/urdf-robot-description.md) - Representing robots in ROS 2
-5. [ROS 2 Best Practices](./module-1/ros2-best-practices.md) - Guidelines for effective development
-6. [Module 1 Exercises](./module-1/exercises.md) - Hands-on practice with the concepts
+1. [ROS 2 Introduction](./ros2-introduction.md) - Overview of ROS 2 and its architecture
+2. [ROS 2 Nodes, Topics, and Services](./ros2-nodes-topics-services.md) - Core communication patterns
+3. [Python Integration with rclpy](./rclpy-python-integration.md) - Connecting Python to ROS 2
+4. [URDF Robot Description](./urdf-robot-description.md) - Representing robots in ROS 2
+5. [ROS 2 Best Practices](./ros2-best-practices.md) - Guidelines for effective development
+6. [Module 1 Exercises](./exercises.md) - Hands-on practice with the concepts
 
 ## Getting Started
 
-Let's begin by exploring the fundamentals of ROS 2 and understanding why it's essential for modern robotics development. Proceed to the [next section](./module-1/ros2-introduction.md) to dive into ROS 2 basics.
+Let's begin by exploring the fundamentals of ROS 2 and understanding why it's essential for modern robotics development. Proceed to the [next section](./ros2-introduction.md) to dive into ROS 2 basics.

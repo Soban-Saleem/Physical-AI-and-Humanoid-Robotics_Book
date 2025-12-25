@@ -389,18 +389,18 @@ A node that demonstrates a complete behavior loop: sensing → processing → de
 
 ## Self-Assessment Questions
 
-1. How would you modify the publisher/subscriber example to handle different message types?
-2. What are the differences between using topics and services in ROS 2?
-3. Why are proper inertial properties important in URDF files?
-4. How would you handle errors in a ROS 2 node to ensure system stability?
-5. What considerations would you make for real-time performance in a humanoid robot control node?
+- How would you modify the publisher/subscriber example to handle different message types?
+- What are the differences between using topics and services in ROS 2?
+- Why are proper inertial properties important in URDF files?
+- How would you handle errors in a ROS 2 node to ensure system stability?
+- What considerations would you make for real-time performance in a humanoid robot control node?
 
 ## Advanced Challenges (Optional)
 
-1. **Real-time Performance**: Modify one of your nodes to meet real-time performance requirements (e.g., processing at 100Hz with <10ms latency)
-2. **Dynamic Parameters**: Add dynamic parameter reconfiguration to one of your nodes
-3. **Multi-Node Coordination**: Create a system with multiple coordinated nodes that work together
-4. **Simulation Integration**: Connect your nodes to a Gazebo simulation
+- **Real-time Performance**: Modify one of your nodes to meet real-time performance requirements (e.g., processing at 100Hz with less than 10ms latency)
+- **Dynamic Parameters**: Add dynamic parameter reconfiguration to one of your nodes
+- **Multi-Node Coordination**: Create a system with multiple coordinated nodes that work together
+- **Simulation Integration**: Connect your nodes to a Gazebo simulation
 
 ## Summary
 

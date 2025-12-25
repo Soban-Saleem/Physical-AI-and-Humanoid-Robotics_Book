@@ -15,12 +15,12 @@ Create a complete voice processing pipeline that captures voice commands, proces
 - Validate actions before execution
 
 ### Steps to Complete
-1. Create a ROS 2 node for voice capture
-2. Implement speech-to-text conversion
-3. Connect to an LLM for command interpretation
-4. Map interpreted commands to robot actions
-5. Implement action validation and safety checks
-6. Test with various voice commands
+- Create a ROS 2 node for voice capture
+- Implement speech-to-text conversion
+- Connect to an LLM for command interpretation
+- Map interpreted commands to robot actions
+- Implement action validation and safety checks
+- Test with various voice commands
 
 ### Solution Approach
 
@@ -383,11 +383,11 @@ Implement cognitive planning using Large Language Models to decompose complex ta
 - Handle ambiguous or complex commands
 
 ### Steps to Complete
-1. Create an LLM-based task decomposition node
-2. Implement command parsing and interpretation
-3. Generate structured action sequences
-4. Implement validation and safety checks
-5. Test with complex, multi-step commands
+- Create an LLM-based task decomposition node
+- Implement command parsing and interpretation
+- Generate structured action sequences
+- Implement validation and safety checks
+- Test with complex, multi-step commands
 
 ### Solution Approach
 
@@ -639,12 +639,12 @@ Create a comprehensive system that maps natural language commands to specific ro
 - Implement fallback strategies for unrecognized commands
 
 ### Steps to Complete
-1. Create intent recognition system
-2. Implement entity extraction
-3. Map intents to actions
-4. Add synonym and variation handling
-5. Implement fallback and clarification mechanisms
-6. Test with various command formulations
+- Create intent recognition system
+- Implement entity extraction
+- Map intents to actions
+- Add synonym and variation handling
+- Implement fallback and clarification mechanisms
+- Test with various command formulations
 
 ### Solution Approach
 
@@ -1107,12 +1107,12 @@ Implement a computer vision system that identifies objects in the environment an
 - Implement object tracking for dynamic scenes
 
 ### Steps to Complete
-1. Create object detection node
-2. Implement 3D pose estimation from 2D detection and depth
-3. Integrate with ROS 2 topics
-4. Connect to the language-action system
-5. Add object tracking capabilities
-6. Test with various objects and scenarios
+- Create object detection node
+- Implement 3D pose estimation from 2D detection and depth
+- Integrate with ROS 2 topics
+- Connect to the language-action system
+- Add object tracking capabilities
+- Test with various objects and scenarios
 
 ### Solution Approach
 
@@ -1343,11 +1343,11 @@ Integrate all VLA components (Voice processing, Cognitive planning, Language-to-
 - Test complete end-to-end functionality
 
 ### Solution Approach
-1. Create a VLA coordinator node that orchestrates all components
-2. Implement message passing between components
-3. Add safety validation layer
-4. Create end-to-end testing scenarios
-5. Validate system performance and safety
+- Create a VLA coordinator node that orchestrates all components
+- Implement message passing between components
+- Add safety validation layer
+- Create end-to-end testing scenarios
+- Validate system performance and safety
 
 ### Example Integration Node
 
@@ -1638,19 +1638,19 @@ if __name__ == '__main__':
 
 ## Self-Assessment Questions
 
-1. How do you validate that a voice command has been correctly interpreted by the cognitive planner?
-2. What are the key differences between simulating sensors in Gazebo vs. Isaac Sim?
-3. How would you handle a command that requires an object that isn't currently visible?
-4. What safety measures would you implement before executing a manipulation action?
-5. How would you verify that the Urdu translation preserves technical accuracy?
+- How do you validate that a voice command has been correctly interpreted by the cognitive planner?
+- What are the key differences between simulating sensors in Gazebo vs. Isaac Sim?
+- How would you handle a command that requires an object that isn't currently visible?
+- What safety measures would you implement before executing a manipulation action?
+- How would you verify that the Urdu translation preserves technical accuracy?
 
 ## Advanced Challenges (Optional)
 
-1. **Multi-modal Fusion**: Integrate multiple sensor modalities (vision, audio, tactile) for more robust perception
-2. **Context-Aware Planning**: Implement context awareness to adapt behavior based on environment and situation
-3. **Learning from Interaction**: Design a system that learns from successful and failed interactions to improve future performance
-4. **Human-Robot Collaboration**: Implement features that allow humans and robots to collaborate on tasks
-5. **Adaptive Personalization**: Create a system that learns user preferences over time and adapts accordingly
+- **Multi-modal Fusion**: Integrate multiple sensor modalities (vision, audio, tactile) for more robust perception
+- **Context-Aware Planning**: Implement context awareness to adapt behavior based on environment and situation
+- **Learning from Interaction**: Design a system that learns from successful and failed interactions to improve future performance
+- **Human-Robot Collaboration**: Implement features that allow humans and robots to collaborate on tasks
+- **Adaptive Personalization**: Create a system that learns user preferences over time and adapts accordingly
 
 ## Summary
 

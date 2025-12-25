@@ -15,12 +15,12 @@ Create a simple Gazebo world with basic physics properties and a few objects.
 - Test the world in Gazebo to ensure objects behave correctly
 
 ### Steps to Complete
-1. Create a new directory for your world: `~/gazebo_worlds/basic_world`
-2. Create a world file named `basic_environment.sdf`
-3. Define physics properties for the world (gravity, time step, etc.)
-4. Add a ground plane and sky
-5. Add at least 3 objects with different shapes and properties
-6. Launch Gazebo with your world to verify it works correctly
+- Create a new directory for your world: `~/gazebo_worlds/basic_world`
+- Create a world file named `basic_environment.sdf`
+- Define physics properties for the world (gravity, time step, etc.)
+- Add a ground plane and sky
+- Add at least 3 objects with different shapes and properties
+- Launch Gazebo with your world to verify it works correctly
 
 ### Solution Template
 

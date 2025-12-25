@@ -15,11 +15,11 @@ Create an end-to-end pipeline that receives a voice command, processes it throug
 - Validate safety before action execution
 
 ### Steps to Complete
-1. Create a voice command node that captures and transcribes voice input
-2. Connect to the cognitive planning system to decompose the command
-3. Integrate with navigation and manipulation systems
-4. Implement safety validation before execution
-5. Test with a complete "fetch and carry" command
+- Create a voice command node that captures and transcribes voice input
+- Connect to the cognitive planning system to decompose the command
+- Integrate with navigation and manipulation systems
+- Implement safety validation before execution
+- Test with a complete "fetch and carry" command
 
 ### Solution Approach
 
@@ -370,11 +370,11 @@ Integrate multiple perception modalities (vision, LiDAR, IMU) to create a compre
 - Validate perception accuracy
 
 ### Steps to Complete
-1. Create a sensor fusion node that subscribes to multiple sensor topics
-2. Implement data association and fusion algorithms
-3. Create a unified representation of the environment
-4. Handle sensor failures and missing data
-5. Validate the fused perception output
+- Create a sensor fusion node that subscribes to multiple sensor topics
+- Implement data association and fusion algorithms
+- Create a unified representation of the environment
+- Handle sensor failures and missing data
+- Validate the fused perception output
 
 ### Solution Approach
 
@@ -640,11 +640,11 @@ Implement a humanoid-specific behavior that demonstrates bipedal locomotion, man
 - Validate safety of humanoid-specific movements
 
 ### Steps to Complete
-1. Create a humanoid locomotion controller
-2. Implement manipulation behaviors for humanoid hands
-3. Design human-aware navigation system
-4. Create human-like interaction patterns
-5. Validate all behaviors for safety and feasibility
+- Create a humanoid locomotion controller
+- Implement manipulation behaviors for humanoid hands
+- Design human-aware navigation system
+- Create human-like interaction patterns
+- Validate all behaviors for safety and feasibility
 
 ### Solution Approach
 
@@ -932,11 +932,11 @@ Integrate all components into a complete autonomous humanoid system and validate
 - Document system performance and limitations
 
 ### Steps to Complete
-1. Create a system coordinator that manages all components
-2. Implement state machine for system operation
-3. Design validation procedures for the integrated system
-4. Test with complex multi-step scenarios
-5. Document system performance metrics
+- Create a system coordinator that manages all components
+- Implement state machine for system operation
+- Design validation procedures for the integrated system
+- Test with complex multi-step scenarios
+- Document system performance metrics
 
 ### Solution Approach
 
@@ -1221,27 +1221,27 @@ if __name__ == '__main__':
 
 ## Self-Assessment Questions
 
-1. How would you validate that the voice command pipeline properly decomposes complex tasks into executable actions?
-2. What metrics would you use to measure the quality of sensor fusion in your system?
-3. How would you ensure humanoid walking patterns maintain stability and balance?
-4. What safety checks would you implement before executing any physical action?
-5. How would you handle the transition from simulation to real hardware?
+- How would you validate that the voice command pipeline properly decomposes complex tasks into executable actions?
+- What metrics would you use to measure the quality of sensor fusion in your system?
+- How would you ensure humanoid walking patterns maintain stability and balance?
+- What safety checks would you implement before executing any physical action?
+- How would you handle the transition from simulation to real hardware?
 
 ## Advanced Challenges (Optional)
 
-1. **Multi-Robot Coordination**: Extend the system to coordinate multiple humanoid robots
-2. **Learning from Demonstration**: Implement imitation learning capabilities
-3. **Adaptive Behavior**: Create behaviors that adapt based on environment or user feedback
-4. **Human-Robot Collaboration**: Implement collaborative tasks between humans and robots
-5. **Long-term Autonomy**: Design the system for sustained operation with self-monitoring
+- **Multi-Robot Coordination**: Extend the system to coordinate multiple humanoid robots
+- **Learning from Demonstration**: Implement imitation learning capabilities
+- **Adaptive Behavior**: Create behaviors that adapt based on environment or user feedback
+- **Human-Robot Collaboration**: Implement collaborative tasks between humans and robots
+- **Long-term Autonomy**: Design the system for sustained operation with self-monitoring
 
 ## Summary
 
 These capstone exercises integrate all modules of the Physical AI & Humanoid Robotics textbook:
 
-1. Voice command processing and cognitive planning
-2. Multi-modal perception and sensor fusion
-3. Humanoid-specific behaviors and control
-4. System integration and validation
+- Voice command processing and cognitive planning
+- Multi-modal perception and sensor fusion
+- Humanoid-specific behaviors and control
+- System integration and validation
 
 Completing these exercises will demonstrate your ability to create a complete autonomous humanoid system that can understand natural language commands, perceive its environment, plan appropriate actions, and execute them safely. This represents the culmination of all the concepts learned throughout the textbook.
